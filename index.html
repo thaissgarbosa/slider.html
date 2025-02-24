@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carrossel</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"/>
+</head>
+<body>
+    <section class="splide" data-splide='{"type":"loop", "perPage":2}' aria-label="Carrossel de bolo">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide  slide1"><img src="image1.jpg" alt="bolo"></li>
+                <li class="splide__slide  slide2"><img src="image2.jpg" alt="bolo"></li>
+                <li class="splide__slide  slide3"><img src="image3.jpg" alt="bolo"></li>
+            </ul>
+        </div>
+    </section>
+</body>
+<script>
+    new Splide(".splide").mount();
+</script>
+</html>
